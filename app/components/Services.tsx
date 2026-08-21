@@ -1,14 +1,24 @@
 export default function Services() {
   const services = [
     {
-      title: "🏗️ Bygg",
+      title: "🏗️ Bygg & Renovering",
       items: [
-        "Golvläggning",
-        "Våtrum",
         "Renovering",
+        "Snickeri",
+        "Måleri",
+        "Ombyggnation",
         "Underarbete",
-        "Mattläggning",
+      ],
+    },
+    {
+      title: "🧱 Golvläggning",
+      items: [
+        "Plastmatta",
+        "Linoleum",
+        "Parkett",
+        "Våtrumsgolv",
         "Golvreparation",
+        "Mattläggning",
       ],
     },
     {
@@ -22,43 +32,36 @@ export default function Services() {
       ],
     },
     {
-      title: "💻 IT",
+      title: "💻 IT & Nätverk",
       items: [
-        "Nätverk",
-        "Server",
-        "Wi-Fi",
-        "IT-support",
-      ],
-    },
-    {
-      title: "🚀 Digital Ventures",
-      items: [
-        "MedCore",
-        "Coming Soon",
-        "LiveArena",
-        "Coming Soon",
+        "IT Support",
+        "Nätverksinstallation",
+        "WiFi & Router Setup",
+        "Server Administration",
+        "Microsoft 365",
+        "Azure Cloud Solutions",
+        "Cyber Security",
       ],
     },
   ];
 
   return (
     <section
-  id="services"
-  className="py-20 px-6 bg-white"
->
+      id="services"
+      className="py-20 px-6 bg-white"
+    >
       <div className="max-w-7xl mx-auto text-center">
-
         <h2 className="text-4xl font-bold mb-4">
           Våra Tjänster
         </h2>
 
         <p className="text-gray-600 mb-12">
           Vi erbjuder professionella tjänster inom bygg,
-          städning, IT och digital innovation.
+          golvläggning, städning och IT med fokus på kvalitet,
+          noggrannhet och kundnöjdhet.
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-
           {services.map((service) => (
             <div
               key={service.title}
@@ -70,14 +73,11 @@ export default function Services() {
 
               <ul className="space-y-3 text-gray-700">
                 {service.items.map((item) => (
-                  <li key={item}>
-                    {item}
-                  </li>
+                  <li key={item}>✓ {item}</li>
                 ))}
               </ul>
             </div>
           ))}
-
         </div>
       </div>
     </section>

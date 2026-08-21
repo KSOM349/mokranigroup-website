@@ -5,14 +5,16 @@ export default function Hero() {
 
       <div className="hero-content">
         <span className="hero-label">
-        BYGG • GOLV • STÄD
+          BYGG • GOLV • IT
         </span>
 
-      <h1>Vi bygger framtidens lösningar.</h1>
+        <h1>Mokrani Group</h1>
 
-       <p className="hero-description">
-Mokrani Group AB erbjuder professionella tjänster inom bygg, golvläggning och städ för företag, bostadsrättsföreningar och privatpersoner.
-</p>
+        <p className="hero-description">
+          Professionella lösningar inom bygg, golvläggning och IT.
+          Vi hjälper företag och privatpersoner med kvalitet,
+          noggrannhet och pålitlig service i hela Sverige.
+        </p>
 
         <div className="hero-buttons">
           <a href="#services" className="hero-primary">
