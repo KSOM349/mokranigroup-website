@@ -58,7 +58,7 @@ export default function Projects() {
               key={project.title}
               className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300"
             >
-              <div className="relative h-72">
+              <div className="relative h-48">
                 <Image
                   src={project.image}
                   alt={project.title}
