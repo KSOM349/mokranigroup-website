@@ -4,7 +4,7 @@ export default function Hero() {
 
       {/* MG Watermark */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <span className="text-[220px] md:text-[320px] font-black text-gray-100 select-none">
+        <span className="text-[220px] md:text-[320px] font-black text-gray-200 select-none">
           MG
         </span>
       </div>
