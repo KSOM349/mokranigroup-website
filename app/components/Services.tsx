@@ -22,16 +22,6 @@ export default function Services() {
       ],
     },
     {
-      title: "🧹 Städning",
-      items: [
-        "Flyttstädning",
-        "Hemstädning",
-        "Kontorsstädning",
-        "Byggstädning",
-        "Fönsterputsning",
-      ],
-    },
-    {
       title: "💻 IT & Nätverk",
       items: [
         "IT Support",
@@ -51,17 +41,19 @@ export default function Services() {
       className="py-20 px-6 bg-white"
     >
       <div className="max-w-7xl mx-auto text-center">
+
         <h2 className="text-4xl font-bold mb-4">
           Våra Tjänster
         </h2>
 
         <p className="text-gray-600 mb-12">
           Vi erbjuder professionella tjänster inom bygg,
-          golvläggning, städning och IT med fokus på kvalitet,
+          golvläggning och IT med fokus på kvalitet,
           noggrannhet och kundnöjdhet.
         </p>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
           {services.map((service) => (
             <div
               key={service.title}
@@ -78,7 +70,28 @@ export default function Services() {
               </ul>
             </div>
           ))}
+
         </div>
+
+        <div className="mt-16 bg-gray-50 rounded-2xl p-8 shadow-sm">
+          <h3 className="text-2xl font-bold mb-4">
+            ✨ Städtjänster
+          </h3>
+
+          <p className="text-gray-600 mb-4">
+            Vi erbjuder även professionella städtjänster för
+            privatpersoner och företag.
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-4 text-gray-700">
+            <span>✓ Flyttstädning</span>
+            <span>✓ Hemstädning</span>
+            <span>✓ Kontorsstädning</span>
+            <span>✓ Byggstädning</span>
+            <span>✓ Fönsterputsning</span>
+          </div>
+        </div>
+
       </div>
     </section>
   );
