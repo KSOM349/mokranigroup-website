@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 const sections = [
   {
     "heading": "Erfarenhet av golv, plattsättning och våtrum",
-    "text": "Vi har arbetat med golv och plattsättning i 10 år. Under tiden har vi lagt golv i bostäder, förskolor, boenden och lokaler, och vi är GVK-auktoriserade för arbete i våtrum.\n\nI ett våtrum avgör underarbetet om golvet håller. Det börjar med ett tätskikt under ytskiktet, ett golv som lutar mot golvbrunnen och tätade anslutningar vid väggar och rör. När det är rätt gjort kan ytskiktet, till exempel plastmatta, kakel eller klinker, hålla i många år.\n\nVi berättar vad som ska göras innan vi börjar, så att du vet vad du får.",
+    "text": "Vår golvläggare har arbetat med golv och plattsättning sedan 2017 och har yrkesbevis som golvläggare från Byggnadsindustrins Yrkesnämnd (BYN). Erfarenheten omfattar bostäder, förskolor, boenden och lokaler.\n\nI ett våtrum avgör underarbetet om golvet håller. Det börjar med ett tätskikt under ytskiktet, ett golv som lutar mot golvbrunnen och tätade anslutningar vid väggar och rör. När det är rätt gjort kan ytskiktet, till exempel plastmatta, kakel eller klinker, hålla i många år.\n\nVi berättar vad som ska göras innan vi börjar, så att du vet vad du får.",
     "items": []
   },
   {
@@ -47,8 +47,8 @@ const sections = [
     ]
   },
   {
-    "heading": "Ytbehandling",
-    "text": "",
+    "heading": "Ytor på parkett",
+    "text": "Parkett finns med olika ytor.",
     "items": [
       "Lackad",
       "Oljad",
@@ -100,19 +100,21 @@ const sections = [
     ]
   },
   {
-    "heading": "Slipning och reparation",
-    "text": "Gamla golv kan ofta få nytt liv.",
-    "items": [
-      "Slipning av trägolv",
-      "Lackning och oljning",
-      "Golvreparation",
-      "Byte av skadade golvdelar"
-    ]
+    "heading": "Garanti och ROT",
+    "text": "Vi lämnar garanti på vårt arbete. Som privatperson kan du ha rätt till ROT-avdrag för arbetskostnaden. Fråga oss, så berättar vi hur det fungerar för ditt jobb.",
+    "items": []
   },
   {
     "heading": "Där vi arbetar",
     "text": "Vi utför jobb i hela Stockholm och i förorterna runt omkring.",
     "items": []
+  },
+  {
+    "heading": "Reparation",
+    "text": "",
+    "items": [
+      "Golvreparation"
+    ]
   },
   {
     "heading": "Så går ett jobb till",

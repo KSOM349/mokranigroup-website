@@ -3,13 +3,13 @@ import ServicePage from "../components/ServicePage";
 
 export const metadata: Metadata = {
   title: "Plattsättning i Stockholm | Kakel & klinker – Mokrani Group",
-  description: "Plattsättning i Stockholm: kakel och klinker i badrum, hallar och andra utrymmen. Vi har arbetat med plattsättning i 10 år. Begär offert.",
+  description: "Plattsättning i Stockholm: kakel och klinker i badrum, hallar och andra utrymmen. Vår golvläggare har arbetat med golv och plattsättning sedan 2017 och har yrkesbevis som golvläggare från Byggnadsindustrins Yrkesnämnd (BYN). Begär offert.",
 };
 
 const sections = [
   {
     "heading": "Erfarenhet",
-    "text": "Vi har arbetat med plattsättning i 10 år. En bra platta börjar under ytan: underlaget ska vara jämnt, rent och rätt förberett innan vi sätter första plattan.",
+    "text": "Vår golvläggare har arbetat med golv och plattsättning sedan 2017 och har yrkesbevis som golvläggare från Byggnadsindustrins Yrkesnämnd (BYN). En bra platta börjar under ytan: underlaget ska vara jämnt, rent och rätt förberett innan vi sätter första plattan.",
     "items": []
   },
   {
@@ -26,6 +26,11 @@ const sections = [
   {
     "heading": "Tätskikt i våtrum",
     "text": "I våtrum sätter vi tätskikt innan plattorna. Läs mer under Våtrum.",
+    "items": []
+  },
+  {
+    "heading": "Garanti och ROT",
+    "text": "Vi lämnar garanti på vårt arbete. Som privatperson kan du ha rätt till ROT-avdrag för arbetskostnaden. Fråga oss, så berättar vi hur det fungerar för ditt jobb.",
     "items": []
   },
   {

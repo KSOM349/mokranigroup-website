@@ -2,7 +2,7 @@ export default function JsonLd() {
   const data = {
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
-    name: "Mokrani Group AB",
+    name: "Mokrani Group",
     url: "https://www.mokranigroup.com",
     telephone: "+46760949466",
     email: "info@mokranigroup.com",

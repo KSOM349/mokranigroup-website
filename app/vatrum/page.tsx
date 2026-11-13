@@ -3,13 +3,13 @@ import ServicePage from "../components/ServicePage";
 
 export const metadata: Metadata = {
   title: "Våtrum & tätskikt i Stockholm | Mokrani Group",
-  description: "Våtrum och tätskikt i Stockholm: badrumsrenovering med tätskikt, fall mot golvbrunn och tätade anslutningar. GVK-auktoriserade. Begär offert.",
+  description: "Våtrum och tätskikt i Stockholm: badrumsrenovering med tätskikt, fall mot golvbrunn och tätade anslutningar. Begär offert.",
 };
 
 const sections = [
   {
-    "heading": "Våtrum och GVK",
-    "text": "Vi är GVK-auktoriserade och har arbetat med golv och plattsättning i 10 år. I ett våtrum avgör underarbetet om golvet håller över tid.\n\nDet viktigaste är ett tätskikt under ytskiktet, ett golv som lutar mot golvbrunnen och tätade anslutningar vid väggar, rör och golvbrunn.",
+    "heading": "Våtrum och tätskikt",
+    "text": "Vår golvläggare har arbetat med golv och plattsättning sedan 2017 och har yrkesbevis som golvläggare från Byggnadsindustrins Yrkesnämnd (BYN). I ett våtrum avgör underarbetet om golvet håller över tid.\n\nDet viktigaste är ett tätskikt under ytskiktet, ett golv som lutar mot golvbrunnen och tätade anslutningar vid väggar, rör och golvbrunn.",
     "items": []
   },
   {
@@ -31,6 +31,11 @@ const sections = [
       "Kakel",
       "Klinker"
     ]
+  },
+  {
+    "heading": "Garanti och ROT",
+    "text": "Vi lämnar garanti på vårt arbete. Som privatperson kan du ha rätt till ROT-avdrag för arbetskostnaden. Fråga oss, så berättar vi hur det fungerar för ditt jobb.",
+    "items": []
   },
   {
     "heading": "Där vi arbetar",

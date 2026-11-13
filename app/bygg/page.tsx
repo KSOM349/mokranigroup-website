@@ -47,6 +47,16 @@ const sections = [
     ]
   },
   {
+    "heading": "Vi samordnar hela jobbet",
+    "text": "Behöver du flera yrken i samma projekt tar vi hand om kontakten. För rör, snickeri och el arbetar vi tillsammans med utvalda partnerföretag, och du har en kontaktperson hos oss.",
+    "items": []
+  },
+  {
+    "heading": "Garanti och ROT",
+    "text": "Vi lämnar garanti på vårt arbete. Som privatperson kan du ha rätt till ROT-avdrag för arbetskostnaden. Fråga oss, så berättar vi hur det fungerar för ditt jobb.",
+    "items": []
+  },
+  {
     "heading": "Där vi arbetar",
     "text": "Vi utför jobb i hela Stockholm och i förorterna runt omkring.",
     "items": []

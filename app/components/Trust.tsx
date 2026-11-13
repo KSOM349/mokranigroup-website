@@ -1,7 +1,7 @@
 const items = [
   { title: "Kvalitet", text: "Noggrant underarbete och ett slutresultat vi står för." },
   { title: "Kundfokus", text: "Du når oss direkt och får svar utan omvägar." },
-  { title: "Erfarenhet", text: "Projekt från förskolor och LSS-boenden till privata hem." },
+  { title: "Erfarenhet", text: "Erfarenhet av golv och plattsättning sedan 2017." },
 ];
 
 export default function Trust() {

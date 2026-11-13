@@ -8,6 +8,11 @@ export const metadata: Metadata = {
 
 const sections = [
   {
+    "heading": "Utbildning och kompetens",
+    "text": "Vår tekniker är utbildad nätverkstekniker. Utbildningen har fokus på routrar och switchar från Cisco samt server och Active Directory från Microsoft, med laborationer som speglar aktuella IT-miljöer.",
+    "items": []
+  },
+  {
     "heading": "IT-support",
     "text": "",
     "items": [

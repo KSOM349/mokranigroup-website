@@ -1,79 +1,25 @@
 import Image from "next/image";
+import { projects } from "../lib/projects";
 
 export default function Projects() {
-  const projects = [
-    {
-      title: "Förskola",
-      image: "/images/forskola.jpg",
-    },
-    {
-      title: "Golvprojekt",
-      image: "/images/golvprojekt.jpg",
-    },
-    {
-      title: "LSS Hem",
-      image: "/images/lsshem.jpg",
-    },
-    {
-      title: "Renovering",
-      image: "/images/renovering.jpg",
-    },
-    {
-      title: "Snickeri",
-      image: "/images/snickeri0.jpg",
-    },
-    {
-      title: "Våtrum",
-      image: "/images/vatrum.jpg",
-    },
-    {
-      title: "Golvprojekt 2",
-      image: "/images/golvprojekt1.jpg",
-    },
-    {
-      title: "Snickeri 2",
-      image: "/images/snickeri1.jpg",
-    },
-  ];
-
   return (
-    <section
-      id="projects"
-      className="py-24 px-6 bg-gray-50"
-    >
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-14">
-          <h2 className="text-5xl font-bold mb-4">
-            Våra Projekt
-          </h2>
-
-          <p className="text-gray-600 text-lg">
-            Ett urval av våra tidigare arbeten.
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
-            <div
-              key={project.title}
-              className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300"
-            >
-              <div className="relative h-48">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-
-              <div className="p-5">
-                <h3 className="text-xl font-semibold">
-                  {project.title}
-                </h3>
-              </div>
-            </div>
-          ))}
+    <section id="projects" className="bg-white px-5 py-20">
+      <div className="mx-auto max-w-6xl">
+        <h2 className="text-3xl font-extrabold text-[#15191C] md:text-5xl">Tidigare arbeten</h2>
+        <p className="mt-4 text-lg text-[#5A646B]">Ett urval av tidigare arbeten i Stockholm med omnejd.</p>
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {projects.map((p, i) => {
+            const title = p.title ?? `Tidigare arbete ${i + 1}`;
+            return (
+              <figure key={p.image}>
+                <div className="relative h-48 overflow-hidden rounded-md">
+                  <Image src={p.image} alt={title} fill className="object-cover" />
+                </div>
+                <figcaption className="mt-2 text-sm font-semibold text-[#15191C]">{title}</figcaption>
+                {p.text && <p className="text-sm text-[#5A646B]">{p.text}</p>}
+              </figure>
+            );
+          })}
         </div>
       </div>
     </section>
