@@ -1,97 +1,52 @@
+import Image from "next/image";
+
+const withPhoto = [
+  { title: "Bygg & renovering",
+    href: "/bygg", text: "Ombyggnation, underarbete och renovering av bostäder och lokaler.", image: "/images/renovering.jpg" },
+  { title: "Golvläggning",
+    href: "/golv", text: "Plastmatta, linoleum och parkett, från underlag till färdigt golv.", image: "/images/golvprojekt.jpg" },
+  { title: "Våtrum",
+    href: "/golv", text: "Tätskikt och golv i badrum och andra våtutrymmen.", image: "/images/vatrum.jpg" },
+  { title: "Snickeri",
+    href: "/bygg", text: "Inredning och detaljer som är tillverkade och monterade på plats.", image: "/images/snickeri0.jpg" },
+];
+const textOnly = [
+  { title: "IT & nätverk",
+    href: "/it", text: "IT-support, nätverk, Microsoft 365 och Azure för små och medelstora företag." },
+  { title: "Städtjänster",
+    href: "/stadning", text: "Byggstäd och regelbunden städning för företag och privatpersoner." },
+];
+
 export default function Services() {
-  const services = [
-    {
-      title: "🏗️ Bygg & Renovering",
-      items: [
-        "Renovering",
-        "Snickeri",
-        "Måleri",
-        "Ombyggnation",
-        "Underarbete",
-      ],
-    },
-    {
-      title: "🧱 Golvläggning",
-      items: [
-        "Plastmatta",
-        "Linoleum",
-        "Parkett",
-        "Våtrumsgolv",
-        "Golvreparation",
-        "Mattläggning",
-      ],
-    },
-    {
-      title: "💻 IT & Nätverk",
-      items: [
-        "IT Support",
-        "Nätverksinstallation",
-        "WiFi & Router Setup",
-        "Server Administration",
-        "Microsoft 365",
-        "Azure Cloud Solutions",
-        "Cyber Security",
-      ],
-    },
-  ];
-
   return (
-    <section
-      id="services"
-      className="py-20 px-6 bg-white"
-    >
-      <div className="max-w-7xl mx-auto text-center">
-
-        <h2 className="text-4xl font-bold mb-4">
-          Våra Tjänster
-        </h2>
-
-        <p className="text-gray-600 mb-12">
-          Vi erbjuder professionella tjänster inom bygg,
-          golvläggning och IT med fokus på kvalitet,
-          noggrannhet och kundnöjdhet.
-        </p>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-          {services.map((service) => (
-            <div
-              key={service.title}
-              className="border rounded-2xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-2 transition duration-300 text-left"
-            >
-              <h3 className="text-2xl font-bold mb-6">
-                {service.title}
-              </h3>
-
-              <ul className="space-y-3 text-gray-700">
-                {service.items.map((item) => (
-                  <li key={item}>✓ {item}</li>
-                ))}
-              </ul>
-            </div>
+    <section id="services" className="bg-white px-5 py-20">
+      <div className="mx-auto max-w-6xl">
+        <h2 className="text-3xl font-extrabold text-[#15191C] md:text-5xl">Våra tjänster</h2>
+        <div className="mt-12 grid gap-8 md:grid-cols-2">
+          {withPhoto.map((s) => (
+            <article key={s.title} className="group">
+              <div className="relative h-64 overflow-hidden rounded-md md:h-80">
+                <Image src={s.image} alt={s.title} fill className="object-cover transition duration-500 group-hover:scale-105" />
+              </div>
+              <h3 className="mt-5 text-2xl font-bold text-[#15191C]">{s.title}</h3>
+              <p className="mt-2 text-[#5A646B]">{s.text}</p>
+              <a href={s.href} className="mt-3 inline-block font-semibold text-[#15191C] underline decoration-[#F2B705] decoration-4 underline-offset-4">
+                Läs mer
+              </a>
+            </article>
           ))}
-
         </div>
-
-        <div className="mt-16 bg-gray-50 rounded-2xl p-8 shadow-sm">
-          <h3 className="text-2xl font-bold mb-4">
-            ✨ Städtjänster
-          </h3>
-
-          <p className="text-gray-600 mb-4">
-            Vi erbjuder även professionella städtjänster för
-            privatpersoner och företag.
-          </p>
-
-          <div className="flex flex-wrap justify-center gap-4 text-gray-700">
-            <span>✓ Flyttstädning</span>
-            <span>✓ Hemstädning</span>
-            <span>✓ Kontorsstädning</span>
-            <span>✓ Byggstädning</span>
-            <span>✓ Fönsterputsning</span>
-          </div>
+        <div className="mt-8 grid gap-8 md:grid-cols-2">
+          {textOnly.map((s) => (
+            <article key={s.title} className="rounded-md bg-[#ECEDEA] p-8">
+              <h3 className="text-2xl font-bold text-[#15191C]">{s.title}</h3>
+              <p className="mt-2 text-[#5A646B]">{s.text}</p>
+              <a href={s.href} className="mt-3 inline-block font-semibold text-[#15191C] underline decoration-[#F2B705] decoration-4 underline-offset-4">
+                Läs mer
+              </a>
+            </article>
+          ))}
         </div>
-
       </div>
     </section>
   );

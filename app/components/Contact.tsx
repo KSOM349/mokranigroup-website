@@ -1,54 +1,23 @@
+import QuoteForm from "./QuoteForm";
+import CopyEmail from "./CopyEmail";
+
 export default function Contact() {
   return (
-    <section
-      id="contact"
-      className="py-20 px-6 bg-white"
-    >
-      <div className="max-w-3xl mx-auto text-center">
-
-        <h2 className="text-4xl font-bold mb-6">
-          Kontakta Oss
-        </h2>
-
-        <p className="text-gray-600 mb-8">
-          Kontakta oss för offert eller frågor om bygg,
-          golvläggning, IT eller städtjänster.
+    <section id="contact" className="bg-[#ECEDEA] px-5 py-20">
+      <div className="mx-auto max-w-4xl">
+        <h2 className="text-3xl font-extrabold text-[#15191C] md:text-5xl">Begär offert</h2>
+        <p className="mt-4 max-w-2xl text-lg text-[#5A646B]">
+          Berätta vad du behöver hjälp med, så återkommer vi med en offert.
         </p>
-
-        <div className="bg-gray-50 rounded-2xl shadow p-8">
-
-          <p className="mb-4 text-lg">
-            📧 info@mokranigroup.com
-          </p>
-
-          <p className="mb-4 text-lg">
-            📞 076 094 94 66
-          </p>
-
-          <p className="mb-4 text-lg">
-            📍 Stockholm, Sverige
-          </p>
-
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
-
-            <a
-              href="mailto:info@mokranigroup.com"
-              className="bg-black text-white px-6 py-3 rounded-lg hover:opacity-90 transition"
-            >
-              Skicka E-post
-            </a>
-
-            <a
-              href="tel:+46760949466"
-              className="border border-black px-6 py-3 rounded-lg hover:bg-black hover:text-white transition"
-            >
-              Ring Oss
-            </a>
-
-          </div>
-
+        <div className="mt-10 rounded-md bg-white p-6 md:p-10">
+          <QuoteForm />
         </div>
-
+        <p className="mt-8 text-[#15191C]">
+          Du kan också ringa{" "}
+          <a href="tel:+46760949466" className="font-semibold underline decoration-[#F2B705] decoration-4 underline-offset-4">076 094 94 66</a>{" "}
+          eller mejla{" "}
+          <CopyEmail />.
+        </p>
       </div>
     </section>
   );
