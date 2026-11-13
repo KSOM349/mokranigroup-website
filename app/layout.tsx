@@ -13,8 +13,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.mokranigroup.com"),
   title: "Mokrani Group AB - Bygg, Golvläggning & IT i Stockholm",
-  description: "Professionella lösningar inom bygg, golvläggning och IT i hela Sverige. Begär offert idag.",
+  description:
+    "Professionella lösningar inom bygg, golvläggning och IT i Stockholm med omnejd. Begär offert idag.",
+  openGraph: {
+    siteName: "Mokrani Group AB",
+    locale: "sv_SE",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

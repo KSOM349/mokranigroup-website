@@ -20,7 +20,7 @@ const projects = [
 
 export default function Page() {
   return (
-    <PageShell title="Projekt" intro="Ett urval av våra tidigare arbeten.">
+    <PageShell title="Projekt" intro="Ett urval av våra tidigare arbeten i Stockholm med omnejd.">
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((p) => (
           <figure key={p.title}>

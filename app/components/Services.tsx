@@ -6,7 +6,7 @@ const withPhoto = [
   { title: "Golvläggning",
     href: "/golv", text: "Plastmatta, linoleum och parkett, från underlag till färdigt golv.", image: "/images/golvprojekt.jpg" },
   { title: "Våtrum",
-    href: "/golv", text: "Tätskikt och golv i badrum och andra våtutrymmen.", image: "/images/vatrum.jpg" },
+    href: "/vatrum", text: "Tätskikt och golv i badrum och andra våtutrymmen.", image: "/images/vatrum.jpg" },
   { title: "Snickeri",
     href: "/bygg", text: "Inredning och detaljer som är tillverkade och monterade på plats.", image: "/images/snickeri0.jpg" },
 ];

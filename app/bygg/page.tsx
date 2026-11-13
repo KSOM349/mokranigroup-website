@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import ServicePage from "../components/ServicePage";
 
 export const metadata: Metadata = {
-  title: "Bygg & renovering | Mokrani Group",
-  description: "Renovering, ombyggnation, snickeri och måleri i Stockholm.",
+  title: "Renovering & bygg i Stockholm | Mokrani Group",
+  description: "Renovering, ombyggnation, snickeri och måleri i Stockholm. Vi tar hand om allt från underarbete till färdig yta. Begär offert.",
 };
 
 const sections = [
@@ -45,6 +45,11 @@ const sections = [
       "Tapetsering",
       "Målning av tak och väggar"
     ]
+  },
+  {
+    "heading": "Där vi arbetar",
+    "text": "Vi utför jobb i hela Stockholm och i förorterna runt omkring.",
+    "items": []
   }
 ];
 

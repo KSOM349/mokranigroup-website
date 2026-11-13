@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import ServicePage from "../components/ServicePage";
 
 export const metadata: Metadata = {
-  title: "Städtjänster | Mokrani Group",
-  description: "Byggstäd och städning för företag och privatpersoner i Stockholm.",
+  title: "Byggstäd & städning i Stockholm | Mokrani Group",
+  description: "Byggstäd, slutstäd efter renovering och städning för företag och privatpersoner i Stockholm. Begär offert.",
 };
 
 const sections = [

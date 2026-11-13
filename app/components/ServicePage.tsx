@@ -3,9 +3,9 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 
 type Section = { heading: string; text: string; items: string[] };
-type Props = { title: string; intro: string; sections: Section[]; image?: string };
+type Props = { title: string; intro: string; sections: Section[]; image?: string; related?: { href: string; label: string }[] };
 
-export default function ServicePage({ title, intro, sections, image }: Props) {
+export default function ServicePage({ title, intro, sections, image, related }: Props) {
   return (
     <main>
       <Navbar />
@@ -29,7 +29,7 @@ export default function ServicePage({ title, intro, sections, image }: Props) {
           {sections.map((s) => (
             <section key={s.heading}>
               <h2 className="text-2xl font-bold text-[#15191C] md:text-3xl">{s.heading}</h2>
-              {s.text && <p className="mt-3 max-w-2xl text-[#5A646B]">{s.text}</p>}
+              {s.text && <p className="mt-3 max-w-2xl whitespace-pre-line text-[#5A646B]">{s.text}</p>}
               {s.items.length > 0 && (
                 <ul className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                   {s.items.map((i) => (
@@ -39,6 +39,18 @@ export default function ServicePage({ title, intro, sections, image }: Props) {
               )}
             </section>
           ))}
+          {related && related.length > 0 && (
+            <section>
+              <h2 className="text-2xl font-bold text-[#15191C] md:text-3xl">Läs mer</h2>
+              <div className="mt-5 flex flex-wrap gap-4">
+                {related.map((r) => (
+                  <a key={r.href} href={r.href} className="rounded-md border-2 border-[#15191C] px-6 py-3 font-semibold text-[#15191C] hover:bg-[#15191C] hover:text-white">
+                    {r.label}
+                  </a>
+                ))}
+              </div>
+            </section>
+          )}
         </div>
       </div>
       <section className="bg-[#ECEDEA] px-5 py-14 text-center">

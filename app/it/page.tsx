@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import ServicePage from "../components/ServicePage";
 
 export const metadata: Metadata = {
-  title: "IT & nätverk | Mokrani Group",
-  description: "IT-support, nätverk och molnlösningar för företag i Stockholm.",
+  title: "IT-support & nätverk för företag i Stockholm | Mokrani Group",
+  description: "IT-support, nätverk, Microsoft 365 och Azure för företag i Stockholm. Vi hjälper dig med drift, säkerhet och backup. Begär offert.",
 };
 
 const sections = [
