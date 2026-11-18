@@ -17,7 +17,7 @@ export default function Page() {
       <h2 className="mt-12 text-2xl font-bold text-[#15191C]">Kompetens</h2>
       <ul className="mt-5 grid gap-3 sm:grid-cols-2">
         {["Yrkesbevis som golvläggare (BYN)", "Utbildad nätverkstekniker", "Arbete med golv och plattsättning sedan 2017"].map((i) => (
-          <li key={i} className="border-l-4 border-[#F2B705] bg-[#ECEDEA] px-4 py-3 text-[#15191C]">{i}</li>
+          <li key={i} className="border-l-4 border-[#F2B705] bg-[#F3F1EA] px-4 py-3 text-[#15191C]">{i}</li>
         ))}
       </ul>
       <a href="/kontakt" className="mt-8 inline-block rounded-md bg-[#F2B705] px-7 py-4 font-bold text-[#15191C] hover:brightness-95">

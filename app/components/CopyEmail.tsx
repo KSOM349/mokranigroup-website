@@ -1,29 +1,9 @@
-"use client";
-import { useState } from "react";
+const EMAIL = "info@mokranigroup.com";
 
-export default function CopyEmail({ email = "info@mokranigroup.com" }: { email?: string }) {
-  const [copied, setCopied] = useState(false);
-
-  async function copy() {
-    try {
-      await navigator.clipboard.writeText(email);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch {
-      setCopied(false);
-    }
-  }
-
+export default function CopyEmail() {
   return (
-    <span className="inline-flex flex-wrap items-center gap-3">
-      <span className="font-semibold text-[#15191C] select-all">{email}</span>
-      <button
-        type="button"
-        onClick={copy}
-        className="rounded-md border border-[#15191C]/40 px-3 py-1 text-sm font-semibold text-[#15191C] hover:bg-[#15191C] hover:text-white"
-      >
-        {copied ? "Kopierad" : "Kopiera"}
-      </button>
-    </span>
+    <a href={`mailto:${EMAIL}`} className="text-xl font-bold text-[#15191C] underline decoration-[#F2B705] decoration-2 underline-offset-4 hover:opacity-70">
+      {EMAIL}
+    </a>
   );
 }

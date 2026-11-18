@@ -1,14 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Bricolage_Grotesque, DM_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const display = Bricolage_Grotesque({
+  variable: "--font-display",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const body = DM_Sans({
+  variable: "--font-body",
+  subsets: ["latin"],
+});
+
+const label = JetBrains_Mono({
+  variable: "--font-label",
   subsets: ["latin"],
 });
 
@@ -32,7 +37,7 @@ export default function RootLayout({
   return (
     <html
       lang="sv"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${display.variable} ${body.variable} ${label.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

@@ -4,29 +4,28 @@ import QuoteForm from "../components/QuoteForm";
 import CopyEmail from "../components/CopyEmail";
 
 export const metadata: Metadata = {
-  title: "Kontakt och offert | Mokrani Group",
-  description: "Kontakta Mokrani Group i Stockholm för offert på bygg, golv, IT och städ.",
+  title: "Kontakt & offert | Mokrani Group",
+  description: "Begär offert på golv, bygg, IT eller städ i Stockholm. Ring 076-094 94 66 eller skicka ett meddelande.",
 };
-
-const card = "rounded-md bg-[#ECEDEA] p-6";
-const link = "mt-2 block text-[#15191C] underline decoration-[#F2B705] decoration-4 underline-offset-4";
 
 export default function Page() {
   return (
-    <PageShell title="Kontakt" intro="Beskriv vad du behöver hjälp med, så återkommer vi med en offert.">
-      <QuoteForm />
-      <div className="mt-14 grid gap-6 md:grid-cols-3">
-        <div className={card}>
-          <h2 className="text-xl font-bold text-[#15191C]">E-post</h2>
-          <div className="mt-2"><CopyEmail /></div>
-        </div>
-        <div className={card}>
-          <h2 className="text-xl font-bold text-[#15191C]">Telefon</h2>
-          <a href="tel:+46760949466" className={link}>076 094 94 66</a>
-        </div>
-        <div className={card}>
-          <h2 className="text-xl font-bold text-[#15191C]">Ort</h2>
-          <p className="mt-2 text-[#15191C]">Stockholm, Sverige</p>
+    <PageShell title="Kontakt" intro="Berätta vad du behöver så återkommer vi så snart vi kan.">
+      <div className="grid gap-12 md:grid-cols-2">
+        <QuoteForm />
+        <div className="space-y-4">
+          <div className="rounded-md bg-[#F3F1EA] p-6">
+            <p className="text-sm font-semibold uppercase tracking-wide text-[#5B6166]">Telefon</p>
+            <a href="tel:+46760949466" className="text-xl font-bold text-[#15191C]">076-094 94 66</a>
+          </div>
+          <div className="rounded-md bg-[#F3F1EA] p-6">
+            <p className="text-sm font-semibold uppercase tracking-wide text-[#5B6166]">E-post</p>
+            <CopyEmail />
+          </div>
+          <div className="rounded-md bg-[#F3F1EA] p-6">
+            <p className="text-sm font-semibold uppercase tracking-wide text-[#5B6166]">Område</p>
+            <p className="font-semibold text-[#15191C]">Stockholm med omnejd</p>
+          </div>
         </div>
       </div>
     </PageShell>

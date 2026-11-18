@@ -28,9 +28,9 @@ export default function QuoteForm() {
 
   if (status === "done") {
     return (
-      <div role="status" className="rounded-md border-l-4 border-[#F2B705] bg-[#ECEDEA] p-8">
+      <div role="status" className="rounded-md border-l-4 border-[#F2B705] bg-[#F3F1EA] p-8">
         <h3 className="text-2xl font-bold text-[#15191C]">Tack för din förfrågan</h3>
-        <p className="mt-2 text-[#5A646B]">Vi har tagit emot din förfrågan och återkommer till dig.</p>
+        <p className="mt-2 text-[#5B6166]">Vi har tagit emot din förfrågan och återkommer till dig.</p>
       </div>
     );
   }
@@ -59,12 +59,17 @@ export default function QuoteForm() {
           <option>IT och nätverk</option>
           <option>Städ</option>
           <option>Annat</option>
+          <option>Vet ej</option>
         </select>
       </label>
       <label className="block font-semibold text-[#15191C] md:col-span-2">
         Beskriv ditt projekt
         <textarea name="message" required rows={5} className={field} placeholder="Vad ska göras, var, och ungefär hur stor yta?" />
       </label>
+      <p className="text-sm text-[#5B6166] md:col-span-2">
+        När du skickar förfrågan behandlar vi dina uppgifter för att kunna svara dig. Läs mer i vår{" "}
+        <a href="/integritet" className="underline">integritetspolicy</a>.
+      </p>
       <div className="md:col-span-2">
         <button
           type="submit"

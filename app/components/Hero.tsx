@@ -2,30 +2,34 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative isolate flex min-h-[78vh] items-end overflow-hidden bg-[#15191C] text-white">
-      <Image src="/images/renovering.jpg" alt="Renoverat rum" fill priority className="-z-20 object-cover" />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-t from-[#15191C] via-[#15191C]/70 to-[#15191C]/20" />
-      <div className="mx-auto w-full max-w-6xl px-5 pb-16 pt-32">
-        <h1 className="max-w-3xl text-4xl font-extrabold leading-[1.05] tracking-tight md:text-7xl">
-          Bygg, golv och IT för Stockholms hem och företag
+    <section className="relative isolate overflow-hidden bg-white">
+      <Image
+        src="/images/arbete-linoleum.jpg"
+        alt="Nylagt linoleumgolv i korridor"
+        fill
+        priority
+        sizes="100vw"
+        className="-z-20 object-cover object-[50%_15%]"
+      />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-white/95 via-white/85 to-white/55 md:bg-gradient-to-r md:from-white md:via-white/90 md:to-white/0" />
+      <div className="mx-auto flex min-h-[78vh] max-w-6xl flex-col justify-center px-5 py-24 md:py-32">
+        <p className="label text-[#5B6166]">Stockholm med omnejd</p>
+        <h1 className="mt-5 max-w-4xl text-5xl font-extrabold text-[#15191C] md:text-8xl">
+          Från bärande vägg till{" "}
+          <span className="bg-[linear-gradient(transparent_62%,#F2B705_62%)]">serverrum.</span>
         </h1>
-        <p className="mt-6 max-w-xl text-lg text-white/80">
-          Mokrani Group utför renovering, golvläggning, våtrum och IT-lösningar. Du får en tydlig offert och en kontaktperson från start till slut.
+        <p className="mt-7 max-w-xl text-lg text-[#3A4046] md:text-xl">
+          Bygg, golvläggning, IT-nätverk och städning. Fyra tjänster, en kontaktperson och en tydlig offert.
         </p>
-        <div className="mt-8 flex flex-wrap gap-4">
-          <a href="#contact" className="rounded-md bg-[#F2B705] px-7 py-4 font-bold text-[#15191C] hover:brightness-95">
+        <div className="mt-10 flex flex-wrap gap-4">
+          <a href="/kontakt" className="inline-flex items-center rounded-md bg-[#F2B705] px-8 py-4 font-bold text-[#15191C] shadow-sm hover:brightness-95">
             Begär offert
           </a>
-          <a href="#services" className="rounded-md border border-white/60 px-7 py-4 font-semibold hover:bg-white hover:text-[#15191C]">
-            Se våra tjänster
+          <a href="tel:+46760949466" className="inline-flex items-center rounded-md border-2 border-[#15191C] bg-white/70 px-8 py-4 font-semibold text-[#15191C] hover:bg-[#15191C] hover:text-white">
+            Ring 076-094 94 66
           </a>
         </div>
       </div>
-      <div
-        aria-hidden
-        className="absolute inset-x-0 bottom-0 h-3"
-        style={{ background: "repeating-linear-gradient(135deg,#F2B705 0 18px,#15191C 18px 36px)" }}
-      />
     </section>
   );
 }
