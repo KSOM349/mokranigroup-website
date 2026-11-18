@@ -22,7 +22,7 @@ export default function Navbar() {
   }, [open]);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-[#15191C]/10 bg-white/95 text-[#15191C] backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-[#15191C]/10 bg-white text-[#15191C]">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
         <a href="/" className="flex items-center gap-3 text-lg font-extrabold tracking-tight">
           <span className="bg-[#F2B705] px-2 py-1 text-base font-extrabold leading-none text-[#15191C]">MG</span>
